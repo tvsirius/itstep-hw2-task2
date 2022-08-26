@@ -3,9 +3,14 @@ from openweather_api import openweather_api
 import pprint
 
 # city_name,country_code = 'Kiev', 'UA'
+# location_get = requests.get(
+#                 f'http://api.openweathermap.org/geo/1.0/direct?q={city_name},{country_code}&limit=1&appid={openweather_api}')
+#
+# lat, lon = location_get.json()[0]['lat'], location_get.json()[0]['lon']
+
 
 while True:
-    input_field = input('Пожалуйста введите название города, или города и код страны, или города, штата и страны через запятую:')
+    input_field = input('Пожалуйста введите название города, или города и код страны, или города, штата и страны через запятую: ')
     try:
         input_decode = input_field.strip().replace(', ', ',').replace(' ,', ',').replace('  ', ' ').split(',')
         if len(input_decode) == 3:
@@ -41,6 +46,7 @@ weather_get = requests.get(
 
 try:
     print(f'Данные о погоде в городе {location_get.json()[0]["local_names"]["ru"]}:')
+    # по некоторым городам в ответе нет поля local_names
 except:
     print(f'Данные о погоде в городе {input_field}:')
 
