@@ -2,8 +2,16 @@ import requests
 from openweather_api import openweather_api
 import pprint
 
-lat=30.489772
-lon=-99.771335
+# lat=30.489772
+# lon=-99.771335
+
+city_name,country_code = 'Kiev', 'UA'
+
+location_get=requests.get(f'http://api.openweathermap.org/geo/1.0/direct?q={city_name},{country_code}&limit=1&appid={openweather_api}')
+
+pprint.pprint(location_get.json())
+
+lat,lon = location_get.json()[0]['lat'],location_get.json()[0]['lon']
 
 exclude='minutely,hourly,daily,alerts'
 
