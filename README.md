@@ -1,11 +1,7 @@
 # itstep-hw2-task2
 itstep-homeworks2-task2
 
-
-
-Есть 2 версии задания. Можете выполнить оба, либо одно из них.
-
-1. Получить данные о погоде по апи.
+ Получить данные о погоде по апи.
 
 Сайт и документация: https://www.metaweather.com/api/
 
@@ -16,5 +12,11 @@ itstep-homeworks2-task2
 
 
 Поскольку сайт  https://www.metaweather.com/api/ не работает то буду разбираться где взять данные о погоде по ссылке:
-
 https://syncwith.com/api/metaweather-api
+
+и буду рабоать с 
+https://openweathermap.org/api/one-call-3#multi
+
+используя  Weather API и Geocoding API
+
+ключ в конфиг файле
