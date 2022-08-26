@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+openweather_api.py
 
 # C extensions
 *.so
