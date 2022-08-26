@@ -10,13 +10,11 @@ itstep-homeworks2-task2
  - Сделать запрос по адресу https://www.metaweather.com/api/location/{woeid}/
  - Из ответа получить следующие данные: температура, влажность, скорость ветра.
 
+Сайт https://www.metaweather.com/api/ не работал
 
-Поскольку сайт  https://www.metaweather.com/api/ не работает то буду разбираться где взять данные о погоде по ссылке:
-https://syncwith.com/api/metaweather-api
-
-и буду рабоать с 
+Код работает с 
 https://openweathermap.org/api/one-call-3#multi
 
-используя  Weather API и Geocoding API
+использует Weather API и Geocoding API
 
-ключ в конфиг файле
+Необходим API ключ в openweather_api.py
